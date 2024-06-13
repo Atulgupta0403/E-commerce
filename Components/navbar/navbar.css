@@ -32,12 +32,27 @@
     text-transform: uppercase;
 }
 
+.navmenu{
+    display: flex;
+    align-items: center;
+}
 
 .navmenu a{
     text-decoration: none;
     padding: 0px 40px;
     font-size: 20px;
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: fit-content; */
+
+}
+
+.navmenu a hr{
+    width: 90%;
+    height: 20%;
+    color: red;
 }
 
 

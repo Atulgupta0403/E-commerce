@@ -12,7 +12,9 @@ const navbar = () => {
         <p>Shopper</p>
       </div>
       <div className="navmenu">
-        <a href="">Shop</a>
+        <a href="">Shop
+          <hr />
+        </a>
         <a href="">Men</a>
         <a href="">Women</a>
         <a href="">Kids</a>
