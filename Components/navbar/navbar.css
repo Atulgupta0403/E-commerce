@@ -6,7 +6,7 @@
 }
 
 .container{
-    background-color: rgba(192, 207, 207, 0.248);
+    /* background-color: rgba(192, 207, 207, 0.248); */
     width: 100%;
     height: 10vh;
     display: flex;
@@ -35,24 +35,24 @@
 .navmenu{
     display: flex;
     align-items: center;
+    gap: 50px;
 }
 
 .navmenu a{
     text-decoration: none;
-    padding: 0px 40px;
-    font-size: 20px;
+    font-size: 22px;
     color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: fit-content; */
+    cursor: pointer;
 
 }
 
 .navmenu a hr{
     width: 90%;
-    height: 20%;
-    color: red;
+    border-radius: 20px;
+    border: 2px solid red;
 }
 
 
@@ -68,4 +68,5 @@
     border-radius: 30px;
     border: 1px solid black;
     font-size: 20px;
+    background-color: white;
 }
