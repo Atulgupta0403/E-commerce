@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+    background-color: rgba(192, 207, 207, 0.248);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navlogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.container .navlogo img{
+    height: 50px;
+    width: 50px;
+}
+
+.container .navlogo p{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.navmenu a{
+    text-decoration: none;
+    padding: 0px 40px;
+    font-size: 20px;
+    color: black;
+}
+
+
+.nav_login_cart{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.nav_login_cart button{
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 20px;
+}
