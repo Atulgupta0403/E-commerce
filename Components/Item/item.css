@@ -1,0 +1,39 @@
+.item{
+    width: 250px;
+    background-color: rgba(242, 236, 236, 0.886);
+    padding: 10px;
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+}
+
+.item img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.item p{
+    margin: 6px 0px;
+
+}
+
+.item-prices{
+    display: flex;
+    gap: 20px;
+}
+
+.item-price-new{
+    color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.item-price-old{
+    color: #8c8c8c;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.item:hover{
+    transition: all 1s ease-in;
+    transform: scale(1.05);
+}

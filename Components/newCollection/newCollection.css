@@ -1,0 +1,21 @@
+.newCollection{
+    text-align: center;   
+}
+
+.newCollection h1{
+    /* background-color: blue; */
+    text-decoration: underline;
+    
+}
+
+
+.collection{
+    /* margin-top: 50px; */
+    padding: 50px;
+    /* background-color: red; */
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
