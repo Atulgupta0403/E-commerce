@@ -28,6 +28,7 @@
 }
 
 .item-price-old{
+    text-decoration: line-through;
     color: #8c8c8c;
     font-size: 18px;
     font-weight: 500;
