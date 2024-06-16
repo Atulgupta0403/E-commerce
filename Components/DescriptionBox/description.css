@@ -1,0 +1,30 @@
+.descriptionBox{
+    padding: 0px 100px;
+}
+
+
+
+.descriptionBox-navigator{
+    display: flex;
+}
+
+
+.descriptionBox-navigator .descriptionBox-nav-box{
+    padding: 10px 25px;
+    border: 1px solid black;
+    font-weight: 600;
+}
+.descriptionBox-navigator .descriptionBox-nav-box-fade{
+    padding: 10px 25px;
+    border: 1px solid black;
+    color: grey;
+    font-weight: 600;
+}
+
+.descriptionbox-description{
+    border: 1px solid black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

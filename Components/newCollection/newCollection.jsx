@@ -11,7 +11,7 @@ const newCollection = () => {
 
       <div className="collection">
         {new_collection.map((item , i)=>{
-            return <Item key={i} item={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}  />
+            return <Item key={i} item={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} id={item.id}  />
         })}
       </div>
     </div>
