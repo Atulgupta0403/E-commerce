@@ -4,7 +4,7 @@ import data_product from "../Assets/data"
 import Item from "../Item/item"
 
 const relatedProducts = () => {
-    console.log(data_product)
+    // console.log(data_product)
   return (
     <div className='relatedProducts'>
       <h1>Related Products</h1>
