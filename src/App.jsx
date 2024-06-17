@@ -11,6 +11,7 @@ import kid_banner from "../Components/Assets/banner_kids.png"
 import women_banner from "../Components/Assets/banner_women.png"
 
 import Navbar from "../Components/navbar/navbar"
+import Footer from "../Components/footer/footer"
 import {BrowserRouter , Routes , Route} from "react-router-dom"
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/login' element={<Login/>}/>
       </Routes>
+      {/* <Footer /> */}
     </BrowserRouter>
     </>
   )

@@ -7,7 +7,7 @@
 
 .container{
     background-color: rgba(217, 228, 228, 0.422);
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     display: flex;
     align-items: center;

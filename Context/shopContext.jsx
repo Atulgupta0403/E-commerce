@@ -6,8 +6,7 @@ export const shopContext = createContext(null)
 const getDefaultCart = () => {
     let cart = {}
     for (let index = 0; index < all_product.length + 1; index++) {
-        cart[index] = 0;
-        
+        cart[index] = 0; 
     }
     return cart
 }
@@ -19,7 +18,7 @@ const ShopContextProvider = (props) =>{
     
     const addToCart = (itemId) =>{
         setcartItems((prev)=>({...prev,[itemId]:prev[itemId] + 1 }))
-        console.log(cartItems)    
+        // console.log(cartItems)    
     }
     const removeFromCart = (itemId) =>{
         setcartItems((prev)=>({...prev,[itemId]:prev[itemId] - 1 }))
