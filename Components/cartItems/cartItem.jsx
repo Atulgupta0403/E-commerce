@@ -11,7 +11,7 @@ const cartItem = () => {
     // all_product.map((e)=>{
     //     console.log([e.id])
     // })
-    console.log(cartItems)
+    // console.log(cartItems)
   return (
     <>
     <div className='cartItem'>
@@ -39,7 +39,45 @@ const cartItem = () => {
             </>
             
         }
+
+        return null
     })}
+
+    <div className="cartitems-down">
+      <div className="cartitem-total">
+        <h1>Cart Total</h1>
+        <div className='cartitems-total'>
+          <div className="cartitems-total-item">
+            <p>Subtotal</p>
+            <p>${0}</p>
+          </div>
+          <hr />
+          <div className="cartitems-total-item">
+            <p>Shipping Fee</p>
+            <p>Free</p>
+          </div>
+          <hr />
+          <div className="cartitems-total-item">
+            <p className='total'>Total</p>
+            <p>${0}</p>
+          </div>
+          <hr />
+        </div>
+
+        <button className='proceed'>PROOCEED TO CHECK OUT</button>
+
+
+      </div>
+
+      <div className="cartitems-promocode">
+        <p>If you have a promocode , Enter it here </p>
+        <div className="cartitems-promobox">
+          <input type="text" placeholder='promo code '/>
+          <button>Submit</button>
+        </div>
+      </div>
+
+    </div>
     </div>
       <Footer />
     </>
