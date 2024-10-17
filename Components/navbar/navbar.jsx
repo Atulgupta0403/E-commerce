@@ -23,7 +23,7 @@ const navbar = () => {
       </div>
 
       <div className="nav_login_cart">
-        <Link to="/login"><button>Register</button></Link>
+        <Link to="/register"><button>Register</button></Link>
         <Link to="/cart"><img src={cart_icon} alt="cart_icon" /></Link>
       </div>
 
