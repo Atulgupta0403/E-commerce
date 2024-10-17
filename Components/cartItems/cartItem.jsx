@@ -5,13 +5,16 @@ import remove_icon from "../Assets/cart_cross_icon.png"
 import Footer from "../footer/footer"
 
 const cartItem = () => {
-    const {all_product , addToCart , removeFromCart , cartItems} = useContext(shopContext)
+    const {all_product  ,cartItems, removeFromCart , getTotalCartAmount} = useContext(shopContext)
     // console.log(all_product)
     // console.log(typeof(all_product))
     // all_product.map((e)=>{
     //     console.log([e.id])
     // })
     // console.log(cartItems)
+    // all_product.map((e)=>{
+    //   console.log(cartItems[e.id] > 0)
+    // })
   return (
     <>
     <div className='cartItem'>
@@ -25,8 +28,8 @@ const cartItem = () => {
       </div>
       <hr />
       {all_product.map((e)=>{
-          if(cartItems[e.id] > 0){
-              return <>
+        if(cartItems[e.id] > 0){
+              return <div>
                 <div className="cartItem-format cartItem-format-main">
                     <img src={e.image} alt="" className='carticon-product-icon' />
                     <p className='title'> {e.name}</p>
@@ -35,13 +38,13 @@ const cartItem = () => {
                     <p>${e.new_price*cartItems[e.id]}</p>
                     <img className='carticon-remove-icon' onClick={()=>{removeFromCart(e.id)}} src={remove_icon} alt="" />
                 </div>
-                    <hr />
-            </>
-            
+                <hr />
+              </div>
         }
+        console.log(cartItems[e.id])
 
-        return null
-    })}
+        return null;
+      })}
 
     <div className="cartitems-down">
       <div className="cartitem-total">
@@ -49,7 +52,7 @@ const cartItem = () => {
         <div className='cartitems-total'>
           <div className="cartitems-total-item">
             <p>Subtotal</p>
-            <p>${0}</p>
+            <p>${getTotalCartAmount()}</p>
           </div>
           <hr />
           <div className="cartitems-total-item">
@@ -59,14 +62,12 @@ const cartItem = () => {
           <hr />
           <div className="cartitems-total-item">
             <p className='total'>Total</p>
-            <p>${0}</p>
+            <p>${getTotalCartAmount()}</p>
           </div>
           <hr />
         </div>
 
         <button className='proceed'>PROOCEED TO CHECK OUT</button>
-
-
       </div>
 
       <div className="cartitems-promocode">

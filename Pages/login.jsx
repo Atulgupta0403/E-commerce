@@ -8,7 +8,7 @@ const login = () => {
       <div className="login-container">
         <h1>Sign up</h1>
         <div className="login-fields">
-          <input type="text" placeholder='Your Name'/>
+          <input type="text" placeholder='Username'/>
           <input type="email" placeholder='Email Address'/>
           <input type="password" placeholder='Password'/>
         </div>

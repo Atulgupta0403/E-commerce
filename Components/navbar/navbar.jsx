@@ -10,7 +10,7 @@ const navbar = () => {
 
   return (
     <>
-    <div class='container'>
+    <div className='container'>
       <div className="navlogo">
         <img src={Logo} alt="logo" />
         <p>Shopper</p>
@@ -23,7 +23,7 @@ const navbar = () => {
       </div>
 
       <div className="nav_login_cart">
-        <Link to="/login"><button>Login</button></Link>
+        <Link to="/login"><button>Register</button></Link>
         <Link to="/cart"><img src={cart_icon} alt="cart_icon" /></Link>
       </div>
 
