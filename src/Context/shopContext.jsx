@@ -3,13 +3,14 @@ import all_product from "../Components/Assets/all_product"
 
 export const shopContext = createContext(null)
 
-const getDefaultCart = () => {
+export const getDefaultCart = () => {
     let cart = {}
     for (let index = 0; index < all_product.length + 1; index++) {
         cart[index] = 0; 
     }
     return cart
 }
+
 
 const ShopContextProvider = (props) =>{
 
@@ -21,6 +22,7 @@ const ShopContextProvider = (props) =>{
         const data = all_product[cartItems.id]
         
         // console.log(cartItems)
+        // console.log(itemId)
     }
     const removeFromCart = (itemId) =>{
         setcartItems((prev)=>({...prev,[itemId]:prev[itemId] - 1 }))
@@ -32,8 +34,8 @@ const ShopContextProvider = (props) =>{
             if(cartItems[item]>0){
                 let itemInfo = all_product.find((product)=>{all_product.id === Number(item)})
                 totalAmount += itemInfo.new_price * cartItems[item]
-                console.log(itemInfo)    
-                console.log(totalAmount)
+                // console.log(itemInfo)    
+                // console.log(totalAmount)
             } 
             return totalAmount
         }

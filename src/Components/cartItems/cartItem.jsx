@@ -15,6 +15,9 @@ const cartItem = () => {
     // all_product.map((e)=>{
     //   console.log(cartItems[e.id] > 0)
     // })
+
+    console.log(all_product)
+
   return (
     <>
     <div className='cartItem'>
